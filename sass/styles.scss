@@ -60,7 +60,7 @@ p {
     @include px-to-rem(margin-bottom, 6);
 }
 
-/* HEADERS
+/* HEADER
 ----------------------------------------------- */
 h1, .em-dash {
     font-weight: 700;
@@ -70,6 +70,15 @@ h1, .em-dash {
     @include type-size(6.6, 6);
     @include px-to-rem(margin-bottom, 1.5);
 }
+
+.title .char1 {
+    letter-spacing: 9px;
+}
+
+.title .char2 {
+    letter-spacing: 0px;
+}
+
 
 .em-dash {
     color: $lightBlue;
