@@ -27,6 +27,7 @@ module.exports = function(grunt) {
       dist: {
         src: [
           'js/vendor/jquery-1.10.2.min.js',
+          'js/vendor/jquery.lettering.js',
           'js/main.js'
         ],
         dest: 'dist/js/script.min.js'
