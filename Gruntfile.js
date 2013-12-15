@@ -46,10 +46,9 @@ module.exports = function(grunt) {
     watch: {
       compass: {
         files: [
+          'dist/*.*',
           'dist/sass/*.*',
-          'js/*.*',
-          'templates/*',
-          'templates/*/*.*'
+          'js/*.*'
         ],
         tasks: ['compass', 'concat', 'uglify'],
         options: {
