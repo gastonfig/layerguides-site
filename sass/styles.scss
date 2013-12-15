@@ -16,8 +16,15 @@ $grid-padding   : 20px;  // grid-padding equal to gutters
 // $border-box-sizing  : true;
 
 
+/* TYPOGRAPHY
+----------------------------------------------- */
+$primaryFont: "futura-pt", sans-serif; /* Light 300 , Book 400, Medium 500, Bold 700 */
+
 /* GLOBAL
 ----------------------------------------------- */
 html {
     background: $background;
+    font-family: $primaryFont;
 }
+
+
