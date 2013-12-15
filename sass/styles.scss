@@ -1,0 +1,23 @@
+@import "compass";
+@import "susy";
+@import "vendor/_normalize";
+
+/* COLORS
+----------------------------------------------- */
+$background: #3c8bcd;
+
+
+/* SUSY Setup
+----------------------------------------------- */
+$total-columns  : 12;             // a 12-column grid
+$column-width   : 60px;            // each column is 4em wide
+$gutter-width   : 20px;            // 1em gutters between columns
+$grid-padding   : 20px;  // grid-padding equal to gutters
+// $border-box-sizing  : true;
+
+
+/* GLOBAL
+----------------------------------------------- */
+html {
+    background: $background;
+}
