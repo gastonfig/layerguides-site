@@ -1,0 +1,29 @@
+// Media Queries
+@mixin breakpoint($point) {
+  @if $point == tablet-portrait {
+    @media only screen and (max-width: 980px) { @content; }
+  }
+  @else if $point == phone-big {
+    @media only screen and (max-width: 767px)  { @content; }
+  }
+  @else if $point == phone {
+    @media only screen and (max-width: 320px)  { @content; }
+  }
+  @else {
+    @media only screen and ($point) { @content; }
+  }
+}
+
+// Font resizing to REMS
+// http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
+@mixin type-size($sizeValue: 1.6, $lineHeight: 3) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+  line-height: ($lineHeight * 10) + px;
+  line-height: $lineHeight + rem;
+}
+
+@mixin px-to-rem($property, $val) {
+  #{$property}: ($val * 10) + px;
+  #{$property}: $val + rem;
+}
