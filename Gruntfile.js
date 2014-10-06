@@ -83,19 +83,19 @@ module.exports = function(grunt) {
           dest: 'dist/'
         }]
       }
+    },
+    'gh-pages': {
+      options: {
+        base: 'dist'
+      },
+      src: ['**']
     }
   });
 
-  // These plugins provide necessary tasks.
-  grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-compass');
-  grunt.loadNpmTasks('grunt-contrib-connect');
-  grunt.loadNpmTasks('grunt-contrib-imagemin');
+  require('load-grunt-tasks')(grunt);
 
   // Default task.
   grunt.registerTask('default', ['imagemin', 'concat', 'compass', 'uglify']);
-  grunt.registerTask('push', ['imagemin', 'compass', 'concat', 'uglify']);
+  grunt.registerTask('push', ['imagemin', 'compass', 'concat', 'uglify', 'gh-pages']);
 
 };
