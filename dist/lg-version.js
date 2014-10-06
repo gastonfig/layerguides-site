@@ -3,9 +3,9 @@ jsonCallback(
         "versionInfo":
         
             {
-                "extensionVersion": "0.8.1",
+                "extensionVersion": "0.9.0",
                 "extensionName": "Layer Guides",
-                "versionDate": "01-04-14"
+                "versionDate": "10-06-14"
             }
         
     }
